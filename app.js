@@ -3,6 +3,13 @@ var carsApp = angular.module('carsApp', [
   'carsControllers'
 ]);
 
+carsApp.directive("required2", function(){
+	return {
+		restrict: "E",
+		template: "<p>(*)to pole jest wymagane</p>"
+	}
+});
+
 carsApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
